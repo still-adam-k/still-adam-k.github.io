@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Describe your website.
+title: 			Mushrooms on code
+description:    ... they grow when you are not watching
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              http://localhost:4000
 
@@ -34,15 +34,15 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
-    url: /about/
+# - title: About
+#    url: /about/
   - title: Posts
     url: /posts/
-  - title: Theme Setup
-    url: /theme-setup/
-  - title: Made Mistakes
-    url: http://mademistakes.com
-    external: true
+#  - title: Theme Setup
+#    url: /theme-setup/
+#  - title: Made Mistakes
+#    url: http://mademistakes.com
+#    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/London
