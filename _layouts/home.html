@@ -30,7 +30,9 @@
   {% for post in site.posts limit:5 %}    
   <article>
     <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-    <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | truncate: 600 }}{% endif %}</p>
+    <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | truncate: 400 }}{% endif %}</p>
+	<h4><a href="{{ site.url }}{{ post.url }}" title="Read more...">Read more...</a></h4>
+	<hr>
   </article>
   {% endfor %}
 </div><!-- /#index -->
