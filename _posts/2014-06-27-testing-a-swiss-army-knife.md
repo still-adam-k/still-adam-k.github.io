@@ -36,7 +36,7 @@ public void Probably_first_test_of_adding_user_to_our_service()
 }
 {% endhighlight %}
 
-Now, creating of our UserAccountRequest is simple, but crude. And when we get more tests, it should be extracted to separate method. Like:
+Now, creating our UserAccountRequest is simple, but crude. And when we get more tests, it should be extracted to separate method. Like:
 
 {% highlight c# linenos %}
 private static UserAccountRequest CreateUserAccountRequest()
@@ -52,13 +52,14 @@ private static UserAccountRequest CreateUserAccountRequest()
 }
 {% endhighlight %}
 
-
 But inevitably there will be more tests. One will require to test our account with invalid email, other with no password, and yet another one could check what happens if our account was born in the future. Each will require slightly different setup. So our options are:
-- leave them as the are in the tests - but that will darken what we are actually testing, and unnecessery bloat the test
-- have each method create separate - will bloat our test class, and is a nightmare to maintain
-- create default, then customize - nice, but we don't want to have public setters just for the sake of tests
+
+* leave them as the are in the tests - but that will darken what we are actually testing, and unnecessery bloat the test
+* have each method create separate - will bloat our test class, and is a nightmare to maintain
+* create default, then customize - nice, but we don't want to have public setters just for the sake of tests
 
 No, today we create - A builder!
+
 
 So let's start by:
 
