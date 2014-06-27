@@ -36,5 +36,5 @@ The session was very few on technical details, and I think for the best. I'm new
 
 I tried to write down my notes and more detailed thoughts about that session, but I would be forced to cite every slide. Instead, I'm going to watch it once again (and again ... and probably again as well) as soon as I get my hands on video. Then do some experiments and maybe have I will be able to produce some thoughts of my own. Hopefully.
 
-P.S. I started my first F# kata. With bumps, but it's going surprisyngly well.
+P.S. I started my first F# kata. With bumps, but it's going surprisingly well.
 
